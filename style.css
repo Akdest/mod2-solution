@@ -1,0 +1,79 @@
+/*for large dev >=932px*/
+
+
+
+
+h1{
+    text-align: center;
+    margin-top:2% ;
+}
+h2{
+    text-align: center;
+    margin-top:2.5vh;
+    color: #fff;
+}
+.menu{
+    background-color: cadetblue;
+    display: inline-block;
+    height: 30vh;
+    width: 25vw;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.rcorn{
+    background-color: rgb(160, 95, 140);
+    display: inline-block;
+    height: 10vh;
+    width: 10vw;
+    margin-left: 15vw;
+    margin-top: 0%;
+}
+p{
+    text-align: center;
+    text-wrap: wrap;
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    .menu{
+        height: 30vh;
+    }
+    p{
+        margin-top: 3vh;
+        font-size: 1rem;
+    }
+    .rcorn{
+        margin-left:25vw ;
+        width: 15vw;
+        height: 8vh;
+    }
+    #rcorn_sushi{
+        margin-left:75vw ;
+    }
+    #chick{
+        width: 40vw;
+    }
+    #beef{
+        width: 40vw;
+        margin-left: 10%;
+    }
+    #sushi{
+        width: 90vw;
+        
+    }
+}
+
+@media (max-width: 767px){
+    .menu{
+        display: block;
+        width:85vw;
+        height: 25vh;
+    }
+    .rcorn{
+        margin-left: 60vw;
+        width: 25vw;
+        height: 6vh;
+    }
+}

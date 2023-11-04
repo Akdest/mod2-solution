@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 2 Solution</title>
+
+</head>
+<body>
+    <h1 class="ourmenu">Our Menu</h1>
+    <div class="menu" id="chick">
+        <div class="rcorn"><h2>Chicken</h2></div>
+        <p>Bacon ipsum dolor amet in anim tail sint, sirloin incididunt prosciutto swine ribeye. Strip steak ea in incididunt, ground round salami chuck sausage eu lorem pork belly reprehenderit occaecat laborum. Id reprehenderit cupidatat aute kielbasa nisi. </p>
+    </div>
+
+    <div class="menu" id="beef">
+        <div class="rcorn"><h2>Beef</h2></div>
+        <p>Bacon ipsum dolor amet in anim tail sint, sirloin incididunt prosciutto swine ribeye. Strip steak ea in incididunt, ground round salami chuck sausage eu lorem pork belly reprehenderit occaecat laborum. Id reprehenderit cupidatat aute kielbasa nisi. </p>
+    </div>
+
+    <div class="menu" id="sushi">
+        <div class="rcorn" id="rcorn_sushi"><h2>Sushi</h2></div>
+        <p>Bacon ipsum dolor amet in anim tail sint, sirloin incididunt prosciutto swine ribeye. Strip steak ea in incididunt, ground round salami chuck sausage eu lorem pork belly reprehenderit occaecat laborum. Id reprehenderit cupidatat aute kielbasa nisi. </p>
+    </div>
+</body>
+    <style>
+        /*for large dev >=932px*/
+
+
+
+
+h1{
+    text-align: center;
+    margin-top:2% ;
+}
+h2{
+    text-align: center;
+    margin-top:2.5vh;
+    color: #fff;
+}
+.menu{
+    background-color: cadetblue;
+    display: inline-block;
+    height: 30vh;
+    width: 25vw;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.rcorn{
+    background-color: rgb(160, 95, 140);
+    display: inline-block;
+    height: 10vh;
+    width: 10vw;
+    margin-left: 15vw;
+    margin-top: 0%;
+}
+p{
+    text-align: center;
+    text-wrap: wrap;
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    .menu{
+        height: 30vh;
+    }
+    p{
+        margin-top: 3vh;
+        font-size: 1rem;
+    }
+    .rcorn{
+        margin-left:25vw ;
+        width: 15vw;
+        height: 8vh;
+    }
+    #rcorn_sushi{
+        margin-left:75vw ;
+    }
+    #chick{
+        width: 40vw;
+    }
+    #beef{
+        width: 40vw;
+        margin-left: 10%;
+    }
+    #sushi{
+        width: 90vw;
+        
+    }
+}
+
+@media (max-width: 767px){
+    .menu{
+        display: block;
+        width:85vw;
+        height: 25vh;
+    }
+    .rcorn{
+        margin-left: 60vw;
+        width: 25vw;
+        height: 6vh;
+    }
+}
+    </style>
+</html>
